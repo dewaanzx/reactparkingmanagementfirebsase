@@ -1,0 +1,28 @@
+
+  
+  .foot {
+	height: 4rem;
+	margin-bottom: 0;
+	background: #191923;
+	color: #FBFEF9;
+	align-items: center;
+	display: flex;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	border-top: 1px solid rgba(14, 121, 178, 0.2);
+  }
+  
+  .foot span {
+	font-size: 0.9rem;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 0.5px;
+	color: rgba(251, 254, 249, 0.8);
+	transition: color 0.3s ease;
+  }
+  
+  .foot span:hover {
+	color: #0E79B2;
+  }

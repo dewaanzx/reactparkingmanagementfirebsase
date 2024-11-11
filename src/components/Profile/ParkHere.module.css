@@ -1,0 +1,76 @@
+.content {
+	text-align: center;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: 2rem;
+	background: #FBFEF9;
+  }
+  
+  .inner {
+	padding: 0 2rem;
+	position: relative;
+	display: block;
+	text-align: left;
+	max-width: 100%;
+  }
+  
+  .inner h2 {
+	font-family: 'Poppins', sans-serif;
+	color: #191923;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+	position: relative;
+  }
+  
+  .inner h2:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background: #0E79B2;
+  }
+  
+  .inner p {
+	font-size: 1.25rem;
+	color: #191923;
+	line-height: 1.6;
+  }
+  
+  .inner span {
+	text-decoration: none;
+	font-style: italic;
+	color: #0E79B2;
+	border-bottom: 2px solid #0E79B2;
+	padding-bottom: 2px;
+  }
+  
+  .actions button {
+	font: inherit;
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #191923;
+	padding: 0.75rem 2rem;
+	border-radius: 50px;
+	margin-left: 1rem;
+	transition: all 0.3s ease;
+  }
+  
+  .actions button:hover {
+	background-color: #191923;
+	border-color: #191923;
+	color: #FBFEF9;
+	transform: translateY(-2px);
+  }
+  
+  .actions .button--alt {
+	color: #191923;
+  }
+  
+  .actions .button {
+	background-color: #0E79B2;
+	border-color: #0E79B2;
+	color: #FBFEF9;
+  }

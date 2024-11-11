@@ -1,0 +1,187 @@
+.header {
+	font-family: 'Inter', system-ui, sans-serif;
+	font-size: 2.5em;
+	letter-spacing: 2px;
+	color: #FBFEF9;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+  }
+  
+  .header::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 3px;
+	background: #0E79B2;
+	border-radius: 2px;
+  }
+  
+  .container {
+	padding: 40px;
+	background-color: #191923;
+	border-radius: 8px;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .item {
+	padding: 30px 60px;
+	padding-left: 0;
+	margin: 0 -10px 50px;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+	transform: translateX(10px);
+  }
+  
+  .title {
+	color: #0E79B2;
+	font-size: 28px;
+	line-height: 1.3;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin-bottom: 12px;
+	display: block;
+	position: relative;
+	padding-left: 70px;
+  }
+  
+  .content {
+	position: relative;
+	margin-left: 70px;
+	color: #FBFEF9;
+	font-size: 16px;
+	line-height: 1.6;
+	opacity: 0.9;
+  }
+  
+  .read {
+	font-family: 'Inter', sans-serif;
+	padding-right: 2px;
+	color: #FBFEF9;
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
+  }
+  
+  .read:hover {
+	opacity: 1;
+	color: #0E79B2;
+  }
+  
+  .number {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #0E79B2;
+	font-size: 36px;
+	font-weight: 800;
+	opacity: 0.8;
+	font-family: 'Inter', monospace;
+	width: 50px;
+	text-align: center;
+	background: rgba(14, 121, 178, 0.1);
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+  }
+  
+  .car {
+	display: block;
+	margin: 60px auto;
+	width: 60%;
+	max-width: 800px;
+	transition: transform 0.3s ease;
+  }
+  
+  .car:hover {
+	transform: scale(1.02);
+  }
+  
+  .car img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 10px 30px rgba(14, 121, 178, 0.15);
+  }
+  
+  ::selection {
+	background: #0E79B2;
+	color: #FBFEF9;
+  }
+  
+  @media (max-width: 768px) {
+	.header {
+	  font-size: 2em;
+	}
+  
+	.container {
+	  padding: 20px;
+	}
+  
+	.item {
+	  padding: 20px 30px 20px 0;
+	}
+  
+	.title {
+	  font-size: 24px;
+	  padding-left: 60px;
+	}
+  
+	.content {
+	  margin-left: 60px;
+	}
+  
+	.number {
+	  font-size: 28px;
+	  width: 40px;
+	  height: 40px;
+	  line-height: 40px;
+	}
+  
+	.car {
+	  width: 80%;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.header {
+	  font-size: 1.8em;
+	}
+  
+	.item {
+	  padding: 15px 20px 15px 0;
+	}
+  
+	.title {
+	  font-size: 20px;
+	  padding-left: 50px;
+	}
+  
+	.content {
+	  margin-left: 50px;
+	  font-size: 14px;
+	}
+  
+	.number {
+	  font-size: 24px;
+	  width: 35px;
+	  height: 35px;
+	  line-height: 35px;
+	}
+  
+	.car {
+	  width: 95%;
+	}
+  }

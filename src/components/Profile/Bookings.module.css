@@ -1,0 +1,58 @@
+.heading {
+	text-align: center;
+	padding: 1.5rem;
+	margin: 2rem auto 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	color: #191923;
+	letter-spacing: 1px;
+  }
+  
+  .note {
+	padding: 0.5rem;
+	text-align: center;
+	margin: 0 auto 2rem;
+	color: #0E79B2;
+  }
+  
+  .note div {
+	margin-bottom: 0.5rem;
+  }
+  
+  .container {
+	font-family: 'Inter', sans-serif;
+	max-width: 1050px;
+	margin: 0 auto 4rem;
+	padding: 0 1.25rem;
+	background: #FBFEF9;
+  }
+  
+  .responsive-table li {
+	border-radius: 8px;
+	padding: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5rem;
+	transition: transform 0.2s ease;
+  }
+  
+  .responsive-table .table-header {
+	background-color: #191923;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	color: #FBFEF9;
+	letter-spacing: 0.05em;
+  }
+  
+  .responsive-table .table-row {
+	background-color: #FBFEF9;
+	box-shadow: 0 4px 12px rgba(14, 121, 178, 0.1);
+  }
+  
+  .responsive-table .table-row:hover {
+	transform: translateY(-2px);
+  }
+  
+  .responsive-table .col-1 {
+	flex-basis: 20%;
+  }

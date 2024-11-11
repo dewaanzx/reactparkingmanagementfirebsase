@@ -1,0 +1,140 @@
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 1rem 3rem;
+	background: #FBFEF9;
+  }
+  
+  .container {
+	max-width: 650px;
+	width: 100%;
+	background: #191923;
+	color: #FBFEF9;
+	padding: 2rem;
+	border-radius: 16px;
+	box-shadow: 0 8px 24px rgba(14, 121, 178, 0.15);
+	animation: form-appear 300ms ease-out forwards;
+  }
+  
+  .title {
+	color: #FBFEF9;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 2px;
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+	color: #0E79B2;
+	font-family: 'Inter', sans-serif;
+	letter-spacing: 3px;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+  }
+  
+  .input {
+	font-family: 'Inter', sans-serif;
+	font-size: 1.125rem;
+	padding: 0.75rem 1.25rem;
+	background-color: #FBFEF9;
+	color: #191923;
+	outline: none;
+	border: 2px solid transparent;
+	border-radius: 12px;
+	transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+	border-color: #0E79B2;
+  }
+  
+  .output {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 1.125rem;
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 0.75rem 1.25rem;
+	background-color: rgba(251, 254, 249, 0.1);
+	color: #FBFEF9;
+	border: 1px solid #0E79B2;
+	border-radius: 12px;
+  }
+  
+  .submit {
+	background-color: #0E79B2;
+	border: none;
+	border-radius: 12px;
+	color: #FBFEF9;
+	cursor: pointer;
+	font-size: 1.125rem;
+	font-weight: 500;
+	height: 3.5rem;
+	margin-top: 1.5rem;
+	transition: all 0.3s ease;
+	width: 100%;
+  }
+  
+  .submit:hover {
+	background-color: #0c6795;
+	transform: translateY(-2px);
+  }
+  
+  .submit2 {
+	background-color: #FBFEF9;
+	border: 2px solid #0E79B2;
+	border-radius: 12px;
+	color: #191923;
+	cursor: pointer;
+	font-size: 1.125rem;
+	font-weight: 500;
+	height: 3.5rem;
+	margin-top: 1.5rem;
+	transition: all 0.3s ease;
+	width: 100%;
+  }
+  
+  .submit2:hover {
+	background-color: #0E79B2;
+	color: #FBFEF9;
+	transform: translateY(-2px);
+  }
+  
+  @keyframes form-appear {
+	from {
+	  opacity: 0;
+	  transform: translateY(30px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  /* Responsive adjustments remain the same but with updated colors */
+  @media all and (max-width: 767px) {
+	/* Previous responsive rules with new color scheme */
+	.responsive-table .table-header {
+	  display: none;
+	}
+	
+	.responsive-table li {
+	  display: block;
+	}
+	
+	.col {
+	  flex-basis: 100%;
+	  display: flex;
+	  padding: 0.75rem 0;
+	}
+	
+	.col::before {
+	  color: #0E79B2;
+	  padding-right: 1.25rem;
+	  text-align: right;
+	  flex-basis: 50%;
+	  content: attr(data-label);
+	}
+  }

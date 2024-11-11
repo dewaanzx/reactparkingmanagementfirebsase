@@ -1,0 +1,106 @@
+.user {
+    position: absolute;
+    right: 17rem;
+    transform: translate(-50%, 2%);
+    text-align: center;
+    border: 2px solid #0E79B2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 36px;
+    cursor: pointer;
+    background: rgba(14, 121, 178, 0.1);
+    transition: all 0.3s ease;
+}
+
+.user:before {
+    content: 'U';
+    color: #0E79B2;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.user:hover {
+    background: rgba(14, 121, 178, 0.2);
+    transform: translate(-50%, 2%) scale(1.05);
+}
+
+.user p {
+    display: none;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    background-color: #191923;
+    padding: 15px 18px;
+    width: 220px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    color: #FBFEF9;
+    font-size: 13px;
+    line-height: 1.5;
+    z-index: 99;
+    border: 1px solid rgba(14, 121, 178, 0.2);
+}
+
+.user:hover p {
+    display: block;
+    transform-origin: 100% 0%;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.user p:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #191923;
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user p:after {
+    width: 10px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 20%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 25%);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .user {
+        right: 12rem;
+        width: 35px;
+        height: 35px;
+        transform: translate(-50%, 8%);
+        font-size: 18px;
+        line-height: 31px;
+    }
+    
+    .user:hover {
+        transform: translate(-50%, 8%) scale(1.05);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .user {
+        display: none;
+    }    
+}

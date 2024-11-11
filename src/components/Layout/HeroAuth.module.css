@@ -1,0 +1,61 @@
+.back {
+	background: transparent;
+	border: 0;
+	font-size: 1rem;
+	cursor: pointer;
+	color: #FBFEF9;
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: all 0.3s ease;
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+  }
+  
+  .back:hover {
+	color: #0E79B2;
+	transform: translateX(-5px);
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+	.back {
+	  left: 3rem;
+	}
+  }
+  
+  @media (width: 768px) and (height: 1024px) {
+	.back {
+	  top: 2rem;
+	  left: 2rem;
+	}
+  }
+  
+  @media (width: 540px) and (height: 720px) {
+	.back {
+	  top: 1.5rem;
+	  left: 1.5rem;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.back {
+	  top: 1rem;
+	  left: 1rem;
+	}
+  }
+  
+  @media (max-width: 420px) {
+	.back {
+	  top: 1rem;
+	  left: 1rem;
+	}
+  }
+  
+  @media (max-width: 320px) {
+	.back {
+	  top: 0.8rem;
+	  left: 0.8rem;
+	}
+  }
